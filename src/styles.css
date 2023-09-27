@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF6F6;
+}
+
+@font-face {
+    font-family: 'BR-Firma';
+    src: url('./src/fonts/BentonSansBold.otf') format('truetype');
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'BR-Firma';
+    src: url('./src/fonts/BentonSansMedium.otf') format('truetype');
+    font-style: medium;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'BR-Firma';
+    src: url('./src/fonts/BentonSansRegular.otf') format('truetype');
+    font-style: regular;
+    font-weight: 300;
+}
+
+:root{
+    --device-bg-color-white:#EEEEEE;
+    --main-bg-color-blue: #023666;
+    --main-bg-color-white: #FEFEFE;
+
+    --secundary-color-blue: #3A5A8B;
+    --secundary-color-aqua: #028283;
+
+    --text-color-black: #252426;
+    --button-color-skyblue: #467FB2;
+    --button-color-darkblue: #082147;
+    
+    --secundary-color-blue-one: #00B8EC;
+    --secundary-color-blue-two: #6C93CF;
+    
+    --neutral-color-one: #A7A7A7;
+    --neutral-color-two: #BEBEBE; 
+    --neutral-color-three:#CFCFCF;
+    --neutral-color-four: #E3E3E3;
+}
+  
+  button, input {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0;
+    background-color: var(--button-color-skyblue)
+  }
+  
+  .device {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 932px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    background-color: var(--device-bg-color-white)
+  }
+
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px 20px;
+    width: 430px;
+    height: 363px;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--main-bg-color-blue)
+  }
+
+  .left-side {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .left-side h1 {
+    font-size: 20px;
+    color: var(--main-bg-color-white);
+    margin: 0 0 10px;
+    padding: 0;
+  }

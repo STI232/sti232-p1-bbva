@@ -1,0 +1,11 @@
+.header-title {
+    display: flex;
+    align-content: center;
+    background-color: var(--main-bg-color-white);
+    color: var(--main-bg-color-blue);
+    padding: 46px 0 13px 23px;
+  }
+
+.header-title img {
+    padding-right: 21px;
+}

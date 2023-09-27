@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA</title>
+</head>
+<body>
+    <main>
+        <form id="logroForm">
+            <p>Aquí podrás crear un logro que te propongas a cumplir junto con tu equipo. Procura llenar cada una de las casillas correctamente.</p>
+            <label for="name">Nombre del logro: *</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="detail">Descripción: *</label><br>
+            <input type="text" id="detail" name="detail" required><br>
+            <div>
+                <h2>Tipo de logro financiero</h2>
+                <label><input type="checkbox" name="logro" value="Ahorrar"> Ahorrar</label><br>
+                <label><input type="checkbox" name="logro" value="PagarDeudas"> Pagar Deudas</label><br>
+                <label><input type="checkbox" name="logro" value="Inversion"> Inversión</label><br>
+                <label><input type="checkbox" name="logro" value="TenerSeguro"> Tener un seguro</label><br>
+                <label><input type="checkbox" name="logro" value="Otro"> Otro</label><br>
+            </div>
+        </br>
+            <label for="cantidad">Cantidad a lograr: *</label><br>
+            <input type="text" id="cantidad" name="cantidad" required><br>
+            </br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+            </br>
+        <br>
+            <input type="submit" value="Crear logro">
+            </form>
+    </main>
+</body>
+<script type="module" src="./form.js"></script>
+</html>

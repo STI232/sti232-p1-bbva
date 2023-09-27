@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBVA</title>
+</head>
+    <body>
+        <main>
+            <div>
+                <img src="../images/nicolas.png" alt="">
+                <div>
+                    <h2>Isabella Gonzáles</h2>
+                    <div>
+                        <h6><span id="puntos">600</span> puntos</h6>
+                    </div>
+                </div>
+                <div>
+                    <h3>Beneficios</h3>
+                    <div>
+                        <beneficio-puntos id="beneficio-1" title="Descuento 10% en tiendas de roca locales" image="../images/benefico_1.png" points="600"></beneficio-puntos>
+                        <beneficio-puntos title="Tarifas bancarias reducidas" image="../images/benefico_1.png" points="900"></beneficio-puntos>
+                        <beneficio-puntos title="Acceso a eventos exclusivos" image="../images/benefico_1.png" points="1000"></beneficio-puntos>
+                        <beneficio-puntos title="Ahorros en servicios" image="../images/benefico_1.png" points="2000"></beneficio-puntos>
+                    </div>
+                    <h4>Ver todos los beneficios</h4>
+                </div>
+            </div>
+        </main>
+        <dialog id="benefico1">
+            <!-- imagen de puntos -->
+            <div>
+                <button id="redimir-puntos">Redimir puntos</button>
+                <button id="cancel-modal">Cancelar</button>
+            </div>
+        </dialog>
+        <script type="module" src="../importComponents.js"></script>
+        <script type="module" src="./tiendaPuntos.js"></script>
+    </body>
+</html> 

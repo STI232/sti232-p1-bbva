@@ -12,7 +12,6 @@ class headerTitle extends HTMLElement {
         return ['title']
     }
     
-
     render() {
         this.innerHTML = `
         <link rel="stylesheet" href="/src/components/headerTitle/headerTitleStyles.css">

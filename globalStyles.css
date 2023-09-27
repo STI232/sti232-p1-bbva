@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF6F6;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('./src/fonts/BentonSansBold.otf') format('truetype');
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('./src/fonts/BentonSansMedium.otf') format('truetype');
+    font-style: medium;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('./src/fonts/BentonSansRegular.otf') format('truetype');
+    font-style: regular;
+    font-weight: 300;
+}
+
+.display1 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.display2 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.heading1 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.heading2 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.heading3 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.heading4 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.heading5 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.heading6 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.subtitle1 {
+  font-family: 'BentonSans';
+  font-weight: medium;
+  font-size: 1.25rem;
+}
+
+.subtitle2 {
+  font-family: 'BentonSans';
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.body1 {
+  font-family: 'BentonSans';
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.body2 {
+  font-family: 'BentonSans';
+  font-weight: 200;
+  font-size: 0.875rem;
+}
+
+.button1 {
+  font-family: 'BentonSans';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.button2 {
+  font-family: 'BentonSans';
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.caption {
+  font-family: 'BentonSans';
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.btn-primary{
+  background-color: var(--button-color-darkblue);
+  color: var(--main-bg-color-white);
+  padding: 16px 24px 16px 24px;
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+:root{
+    --device-bg-color-white:#EEEEEE;
+    --main-bg-color-blue: #023666;
+    --main-bg-color-white: #FEFEFE;
+
+    --secundary-color-blue: #3A5A8B;
+    --secundary-color-aqua: #028283;
+
+    --text-color-black: #252426;
+    --button-color-skyblue: #467FB2;
+    --button-color-darkblue: #082147;
+    
+    --secundary-color-blue-one: #00B8EC;
+    --secundary-color-blue-two: #6C93CF;
+    
+    --neutral-color-one: #A7A7A7;
+    --neutral-color-two: #BEBEBE; 
+    --neutral-color-three:#CFCFCF;
+    --neutral-color-four: #E3E3E3;
+}
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0;
+    background-color: var(--button-color-skyblue)
+  }
+  
+  .device {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 932px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    background-color: var(--device-bg-color-white);
+    position: relative;
+    overflow: hidden;
+  }

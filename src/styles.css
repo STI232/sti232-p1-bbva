@@ -9,24 +9,114 @@ body {
 }
 
 @font-face {
-    font-family: 'BR-Firma';
+    font-family: 'BentonSans';
     src: url('./src/fonts/BentonSansBold.otf') format('truetype');
     font-style: bold;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'BR-Firma';
+    font-family: 'BentonSans';
     src: url('./src/fonts/BentonSansMedium.otf') format('truetype');
     font-style: medium;
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'BR-Firma';
+    font-family: 'BentonSans';
     src: url('./src/fonts/BentonSansRegular.otf') format('truetype');
     font-style: regular;
     font-weight: 300;
+}
+
+.display1 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.display2 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.heading1 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.heading2 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.heading3 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.heading4 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.heading5 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.heading6 {
+  font-family: 'BentonSans';
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.subtitle1 {
+  font-family: 'BentonSans';
+  font-weight: medium;
+  font-size: 1.25rem;
+}
+
+.subtitle2 {
+  font-family: 'BentonSans';
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.body1 {
+  font-family: 'BentonSans';
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.body2 {
+  font-family: 'BentonSans';
+  font-weight: 200;
+  font-size: 0.875rem;
+}
+
+.button1 {
+  font-family: 'BentonSans';
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.button2 {
+  font-family: 'BentonSans';
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.caption {
+  font-family: 'BentonSans';
+  font-weight: 200;
+  font-size: 0.75rem;
 }
 
 :root{
@@ -50,10 +140,6 @@ body {
     --neutral-color-four: #E3E3E3;
 }
   
-  button, input {
-    font-family: 'Poppins', sans-serif;
-  }
-  
   .container {
     display: flex;
     justify-content: center;
@@ -74,24 +160,30 @@ body {
 
   .header {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    gap: 12.682px;
     padding: 40px 20px 20px;
-    width: 430px;
-    height: 363px;
     border-radius: 30px 30px 0 0;
     background-color: var(--main-bg-color-blue)
   }
 
-  .left-side {
+  .name {
     display: flex;
     text-align: center;
     flex-direction: column;
   }
   
-  .left-side h1 {
+  .name h1 {
     font-size: 20px;
     color: var(--main-bg-color-white);
     margin: 0 0 10px;
     padding: 0;
+  }
+
+  .sub-header {
+    display: flex;
+    width: 390px;
+    align-items: center;
+    gap: 161px;
   }

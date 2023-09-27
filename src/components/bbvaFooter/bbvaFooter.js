@@ -6,7 +6,7 @@ class bbvaFooter extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <link rel="stylesheet" href="src/components/bbvaFooter/bbvaFooterStyles.css">
+        <link rel="stylesheet" href="/src/components/bbvaFooter/bbvaFooterStyles.css">
         <div class="footer">
             <footer>
                 <a class="home" href="#"><img src="/src/images/home.png" alt=""></a>

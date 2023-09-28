@@ -52,15 +52,36 @@
                         <div id="amigos-title">
                             <h1 class="heading6">Transacciones</h1>
                         </div>
-                        
+                        <div id="">
+                            <trans-amigo name="Nicolás Robledo" price="+ $200.000" image="../images/nicolas.png"></trans-amigo>
+                            
+                            <trans-amigo name="Guillermo Zapata" price="+ $200.000" image="../images/guille.png"></trans-amigo>
+                        </div>
                     </div>
-                    <button id="mas-button">+</button>
-                    <dialog id="plus-botones">
-                        <a href="../Form/form.html"><button>Crear logo financiero</button></a>
-                        <button>Hacer transferencia</button>
-                        <button id="close-modal">x</button>
-                    </dialog>
+                    
+                    <button id="mas-button" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="../Form/form.html"><button type="button" class="btn btn-primary">Crear logo financiero</button></a>
+                              <button type="button" class="btn btn-primary">Hacer transferencia</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+ 
                 </div>
+
+                <dialog id="plus-botones">
+                    <a href="../Form/form.html"><button>Crear logo financiero</button></a>
+                    <button>Hacer transferencia</button>
+                    <button id="close-modal">x</button>
+                </dialog>
 
                 <bbva-footer></bbva-footer> 
 

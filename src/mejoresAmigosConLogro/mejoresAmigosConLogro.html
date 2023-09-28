@@ -3,63 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBVA</title>
+    <title>Cuentas existentes</title>
+    <link  rel="icon"   href="../images/BBVA-logo.jpg" type="image/jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../globalStyles.css">
+    <link rel="stylesheet" href="../mejoresAmigos/amigosStyles.css">
 </head>
 <body>
     <main>
-        <div>
-            <!-- Top 3 aportes -->
-        </div>
-        <div>
-            <h1><span id="nombreLogro"></span></h1>
+        <div class="container">
+            <div class="device">
+
+                <header-title title="Mejores amigos"> </header-title> 
+
+                <div>
+                    <img src="../images/top3.png" alt="">
+                    <!-- Top 3 aportes -->
+                </div>
+        <div class="container-fluid">
             <div>
-                <div>
-                    <div>
-                        <h5>Total recaudado</h5>
-                        <h2>$0</h2>
-                    </div>
-                    <!-- Simbolo de avanzar -->
+                <div id="amigos-title">
+                    <h1 class="heading5"><span id="nombreLogro"></span></h1>
                 </div>
-                <div>
-                    <div>
-                        <h5>Objetivos</h5>
-                        <h5>$<span id="cantidadLograr"></span></h5>
+                <div class="card" id="amigos-card" style="width: 23rem;">
+                    <div class="card-body">
+                      <h5 class="body1">Total recaudado</h5>
+                      <div class="row justify-content-between">
+                        <div class="heading5 col-6">
+                            $0
+                        </div>
+                        <div class="subtitle2 col-2 arrow-right">
+                            <img src="../images/arrow.png" alt="">
+                        </div>
+                      </div>
+                      <div class="row justify-content-between">
+                        <div class="col-4">
+                          Objetivos
+                        </div>
+                        <div class="col-4">
+                            <h5>$<span id="cantidadLograr"></span></h5>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="body1 col-12">
+                            <img src="../images/empty.png" alt="" class="">
+                        </div>
+
+                      </div>
                     </div>
-                    <!-- barra de progreso -->
                 </div>
-            </div></a>
+        
+            <div>
+                <div id="amigos-title">
+                    <h1 class="heading5">Viaje a Cancún</h1>
+                </div>
+                <a href="../viajeCancun/viajeCancun.html"><div>
+                    <div class="card" id="amigos-card" style="width: 23rem;">
+                        <div class="card-body">
+                          <h5 class="body1">Total recaudado</h5>
+                          <div class="row justify-content-between">
+                            <div class="heading5 col-6">
+                                $10.550.000
+                            </div>
+                            <div class="subtitle2 col-2 arrow-right">
+                                <img src="../images/arrow.png" alt="">
+                            </div>
+                          </div>
+                          <div>
+                            <div class="body1 col-12">
+                                <img src="../images/objetivo.png" alt="" class="objective">
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div id="amigos-title">
+                    <h1 class="heading6">Transacciones</h1>
+                </div>
+                <div id="">
+                    <trans-amigo name="Nicolás Robledo" price="+ $200.000" image="../images/nicolas.png"></trans-amigo>
+                    
+                    <trans-amigo name="Guillermo Zapata" price="+ $200.000" image="../images/guille.png"></trans-amigo>
+                </div>
+            </div>
+            
+            <button id="mas-button" data-bs-toggle="modal" data-bs-target="#exampleModal">+</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="../Form/form.html"><button type="button" class="btn btn-primary">Crear logo financiero</button></a>
+                      <button type="button" class="btn btn-primary">Hacer transferencia</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <dialog id="plus-botones">
+                <a href="../Form/form.html"><button>Crear logo financiero</button></a>
+                <button>Hacer transferencia</button>
+                <button id="close-modal">x</button>
+            </dialog>
+
+            <bbva-footer></bbva-footer> 
+
+            </div>
         </div>
-        <div>
-            <h1>Viaje a cancún</h1>
-            <a href="../viajeCancun/viajeCancun.html"><div>
-                <div>
-                    <div>
-                        <h5>Total recaudado</h5>
-                        <h2>$10.550.000</h2>
-                    </div>
-                    <!-- Simbolo de avanzar -->
-                </div>
-                <div>
-                    <div>
-                        <h5>Objetivos</h5>
-                        <h5>$20.000.000</h5>
-                    </div>
-                    <!-- barra de progreso -->
-                </div>
-            </div></a>
-        </div>
-        <div>
-            <h2>Transacciones</h2>
-            <trans-amigo name="Nicolás Robledo" price="+ $200.000" image="../images/nicolas.png"></trans-amigo>
-        </div>
-        <button id="mas-button">+</button>
-        <dialog id="plus-botones">
-            <a href="../Form/form.html"><button>Crear logo financiero</button></a>
-            <button>Hacer transferencia</button>
-            <button id="close-modal">x</button>
-        </dialog>
     </main>
     <script type="module" src="../importComponents.js"></script>
+    <script type="module" src="./mejoresAmigos.js"></script>
     <script type="module" src="./conLogro.js"></script>
 </body>
 </html>

@@ -1,4 +1,29 @@
 #logroForm {
     padding: 40px 23px;
     color: #05142B;
+    display: flex;
+    flex-direction: column;
 }
+
+#logroForm input {
+    border-radius: 6px;
+    border: 1px solid #6C757D;
+    padding: 8px;
+}
+
+#logroForm .input-group {
+    position: relative;
+}
+
+#logroForm .dollar-sign {
+    position: absolute;
+    left: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+#logroForm #cantidad {
+    padding-left: 30px; 
+}
+
+

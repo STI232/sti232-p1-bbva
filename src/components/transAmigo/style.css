@@ -1,0 +1,36 @@
+#trasamigop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 16px;
+    align-items: center;
+    background-color: #FEFEFE;
+}
+#trasamigop img{
+    border-radius: 50%;
+    max-width: 64px;
+}
+
+.amigop-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+#tu{
+    background-color: var(--button-color-darkblue);
+    color: #FEFEFE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 16px;
+    align-items: center;
+
+}
+
+#tu img{
+    border-radius: 50%;
+    max-width: 64px;
+}

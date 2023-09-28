@@ -17,27 +17,29 @@
                 <header-title title="Crear un logro financiero"></header-title>
                 <form id="logroForm">
                     <p>Aquí podrás crear un logro que te propongas a cumplir junto con tu equipo. Procura llenar cada una de las casillas correctamente.</p>
-                    <label for="name">Nombre del logro: *</label><br>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="detail">Descripción: *</label><br>
-                    <input type="text" id="detail" name="detail" required maxlength="150"> <br>
+                    <label class="subtitle2" for="name">Nombre del logro: *</label>
+                    <input type="text" id="name" size="40" name="name" placeholder="¿Qué nombre tendrá?" required><br>
+                    <label class="subtitle2" for="detail">Descripción: *</label>
+                    <input type="text" size="40" id="detail" name="detail" required maxlength="150" placeholder="Escribe detalles aquí"> <br>
                     <div>
-                        <h2>Tipo de logro financiero</h2>
+                        <p class ="subtitle2">Tipo de logro financiero</p>
                         <label><input type="checkbox" name="logro" value="Ahorrar"> Ahorrar</label><br>
                         <label><input type="checkbox" name="logro" value="PagarDeudas"> Pagar Deudas</label><br>
                         <label><input type="checkbox" name="logro" value="Inversion"> Inversión</label><br>
                         <label><input type="checkbox" name="logro" value="TenerSeguro"> Tener un seguro</label><br>
                         <label><input type="checkbox" name="logro" value="Otro"> Otro</label><br>
                     </div>
-                </br>
-                    <label for="cantidad">Cantidad a lograr: *</label><br>
-                    <input type="text" id="cantidad" name="cantidad" required><br>
                     </br>
-                    <label for="fecha">Fecha:</label>
+                    <label for="cantidad">Cantidad a lograr: *</label>
+                    <div class="input-group">
+                        <span class="dollar-sign">$</span>
+                        <input type="text" id="cantidad" name="cantidad" size="40" placeholder="Ingresa tu meta financiera" required>
+                    </div>
+                    <br>
+                    <label class="subtitle2" for="fecha">Fecha:</label>
                     <input type="date" id="fecha" name="fecha">
-                    </br>
-                <br>
-                    <input type="submit" value="Crear logro">
+                </br>
+                    <input class="btn btn-primary" type="submit" value="Crear logro">
                     </form>
                     <bbva-footer></bbva-footer>
                 </div>

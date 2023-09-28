@@ -1,0 +1,19 @@
+#beneficio-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    margin:16px 0;
+    background-color: #FEFEFE;
+    padding: 16px 24px;
+}
+
+#beneficio-item img {
+    width: 55px;
+    height: 55px;
+}
+
+#beneficio-text .btn-primary {
+    padding: 6px;
+    
+}

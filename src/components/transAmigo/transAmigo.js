@@ -23,19 +23,39 @@ class transAmigo extends HTMLElement {
     }
 
     render(){
-        this.innerHTML = `
-            <article>
-                <img src=${this.image} alt="">
-                <div>
-                    <h5>${this.name}</h5>
-                    <h5>Miembro</h5>
+        if(this.type == 'select'){
+            this.innerHTML = `
+            <link rel="stylesheet" href="globalStyles.css">
+            <link rel="stylesheet" href="/src/components/transAmigo/style.css">
+                <article id="tu">
+                <div class="amigop-perfil">
+                    <img src=${this.image} alt="">
+                    <div>
+                        <h5 class="button2"><b>${this.name}</b></h5>
+                        <h5 class="caption">Miembro</h5>
+                    </div>
                 </div>
-                <div>
                     <h5>${this.price}</h5>
-                    <h5>en Viaje a Cancún</h5>
+                    
+                </article>`
+        } else if(!this.type){
+        this.innerHTML = `
+            <link rel="stylesheet" href="globalStyles.css">
+            <link rel="stylesheet" href="/src/components/transAmigo/style.css">
+                <article id="trasamigop">
+                <div class="amigop-perfil">
+                    <img src=${this.image} alt="">
+                    <div>
+                        <h5 class="button2"><b>${this.name}</b></h5>
+                        <h5 class="caption">Miembro</h5>
+                    </div>
                 </div>
-            </article>
-        `
+                    <h5>${this.price}</h5>
+                    
+                </article>`
+        }
+        
+        
     }
 }
 

@@ -1,0 +1,35 @@
+#section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 23px;
+
+}
+
+
+#section-header button {
+    font-size: 11px;
+    
+
+}
+
+#total-recaudado{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#cancun-edit{
+    background-color: #FEFEFE;
+    padding: 24px 23px;
+    margin: 8px 23px;
+    gap: 11px;
+    flex-direction: column;
+    display: flex;
+}
+#cancun-transacciones{
+    margin: 8px 23px;
+}
+
+
+

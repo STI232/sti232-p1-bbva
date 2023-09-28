@@ -22,6 +22,7 @@ class Beneficio extends HTMLElement {
 
     render(){
         this.innerHTML = `
+        
             <article>
                 <img src=${this.image} alt="">
                 <div>

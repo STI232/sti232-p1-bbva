@@ -1,0 +1,44 @@
+#banner-tienda{
+    display: flex;
+    padding: 28px 23px;
+    gap:17px;
+    background-color: #FEFEFE;
+    box-shadow: -3px 3px 18px 0px rgba(33, 62, 105, 0.09);
+}
+
+#banner-tienda img{
+    border-radius: 50%;
+    width: 92px;
+}
+#tienda-beneficios #mas-beneficios{
+
+    margin: 17px 0;
+
+}
+
+#tienda-beneficios {
+    margin: 23px;
+    color: #024480;
+}
+
+#benefico1{
+    position: fixed;
+    top: 30%; 
+    left: 40%; 
+    padding: 32px;
+    border-width: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#benefico1 #botones{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#benefico1 .btn-outline-primary{
+    border-radius: 0px;
+    padding: 16px 24px 16px 24px;
+}

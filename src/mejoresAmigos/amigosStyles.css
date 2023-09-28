@@ -1,0 +1,36 @@
+#amigos-title h1 {
+    font-size: 20px;
+    color: var(--main-bg-color-blue);
+    margin: 42px 10px 10px 20px;
+    padding: 0;
+}
+
+#amigos-card {
+    display: flex;
+    justify-content: center;
+    margin: 18px 20px 20px 15px;
+    position: relative;
+}
+
+#amigos-card .arrow-right img {
+    transform: rotate(180deg);
+}
+
+a { 
+    text-decoration: none; 
+}
+
+#mas-button {
+    display: flex;
+    position: absolute;
+    bottom: 120px;
+    right: 33px;
+    background-color: var(--main-bg-color-blue);
+    height: 81px;
+    width: 81px;
+    border-radius: 50%;
+    color: var(--main-bg-color-white);
+    font-size: 60px;
+    align-items: flex-end;
+    justify-content: center;
+  }

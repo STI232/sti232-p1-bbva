@@ -127,6 +127,22 @@ body {
   border-width: 0px;
 }
 
+.btn-create-account{
+    background-color: var(--button-color-skyblue);
+    color: var(--main-bg-color-white);
+    padding: 20px 18px 20px 18px;
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
+.btn-view-account{
+    background-color: var(--button-color-darkblue);
+    color: var(--main-bg-color-white);
+    padding: 20px 28px 20px 28px;
+    border-radius: 0px;
+    border-width: 0px;
+  }
+
 :root{
     --device-bg-color-white:#EEEEEE;
     --main-bg-color-blue: #023666;

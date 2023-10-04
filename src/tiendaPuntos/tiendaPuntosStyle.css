@@ -10,18 +10,44 @@
     border-radius: 50%;
     width: 92px;
 }
+
 #tienda-beneficios #mas-beneficios{
-
     margin: 17px 0;
-
 }
+
+
 
 #tienda-beneficios {
     margin: 23px;
     color: #024480;
 }
 
-#benefico1{
+#beneficio-interaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    margin:16px 0;
+    background-color: #FEFEFE;
+    padding: 16px 24px;
+}
+
+#beneficio-interaction img {
+    width: 55px;
+    height: 55px;
+}
+
+#beneficio-interaction .btn-primary {
+    padding: 6px;
+    
+} 
+
+.modal-footer{
+   justify-content: center; 
+    
+}
+
+/* #benefico1{
     position: fixed;
     top: 30%; 
     left: 40%; 
@@ -42,3 +68,24 @@
     border-radius: 0px;
     padding: 16px 24px 16px 24px;
 }
+
+
+#benefico1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    margin:16px 0;
+    background-color: #FEFEFE;
+    padding: 16px 24px;
+}
+
+#benefico1 img {
+    width: 55px;
+    height: 55px;
+}
+
+#benefico1 .btn-primary {
+    padding: 6px;
+    
+} */

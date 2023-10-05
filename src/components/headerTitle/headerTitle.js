@@ -2,6 +2,7 @@ class headerTitle extends HTMLElement {
     constructor() {
         super();
         this.name = this.getAttribute('title');
+        this.aref = this.getAttribute('aref') ?? '#';
     }
 
     connectedCallback(){
@@ -9,7 +10,7 @@ class headerTitle extends HTMLElement {
     }
 
     static get observedAttributes(){
-        return ['title']
+        return ['title', 'aref']
     }
     
     render() {
@@ -17,7 +18,8 @@ class headerTitle extends HTMLElement {
         <link rel="stylesheet" href="/src/components/headerTitle/headerTitleStyles.css">
         <div class="header-title">
                     <div>
-                        <img src="../images/arrow.png" alt="" padding-rigt="5%">
+                        <a href=${this.aref} ><img src="../images/arrow.png" alt="" padding-rigt="5%"></a>
+                        
                     </div>
                     <div>
                         <h3 class="subtitle1">${this.title}</h3>

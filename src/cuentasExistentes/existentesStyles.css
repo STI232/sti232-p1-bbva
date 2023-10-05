@@ -4,9 +4,12 @@
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
+    gap: 18px;
   }
 
-.title-account h1 {
+.title-account .heading5 {
     margin: 20px 20px 20px 20px;
-    padding: 20px 20px 20px 20px;
+    padding: 15px 15px 15px 15px;
+    color: #024480;
 }
+
